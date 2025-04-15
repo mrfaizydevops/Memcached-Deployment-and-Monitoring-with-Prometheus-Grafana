@@ -1,0 +1,8 @@
+global:
+  scrape_interval: 1m
+scrape_configs:
+  - job_name: 'memcached'
+    static_configs:
+      - targets:
+        - 192.168.3.166:9152  # Memcached Exporter instance 1
+        - 192.168.3.165:9153  # Memcached Exporter instance 2
